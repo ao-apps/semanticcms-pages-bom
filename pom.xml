@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+semanticcms-pages-bom - Bill of Materials (BOM) for additional types of SemanticCMS pages.
+Copyright (C) 2019  AO Industries, Inc.
+    support@aoindustries.com
+    7262 Bull Pen Cir
+    Mobile, AL 36695
+
+This file is part of semanticcms-pages-bom.
+
+semanticcms-pages-bom is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+semanticcms-pages-bom is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with semanticcms-pages-bom.  If not, see <http://www.gnu.org/licenses />.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>2.0.0-SNAPSHOT</version>
+		<relativePath>../../parent/pom.xml</relativePath>
+	</parent>
+
+	<groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-bom</artifactId><version>2.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>SemanticCMS Pages BOM²</name>
+	<url>https://semanticcms.com/pages/bom/</url>
+	<description>Bill of Materials (BOM) for additional types of SemanticCMS pages.</description>
+	<inceptionYear>2019</inceptionYear>
+
+	<scm>
+		<!-- Can't inherit due to multi-module -->
+		<connection>scm:git:git://github.com/aoindustries/${project.artifactId}.git</connection>
+		<developerConnection>scm:git:git@github.com:aoindustries/${project.artifactId}.git</developerConnection>
+		<url>https://github.com/aoindustries/${project.artifactId}</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-all</artifactId><version>2.0.0-SNAPSHOT</version>
+				<type>pom</type>
+			</dependency>
+			<dependency>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-unavailable</artifactId><version>2.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-pages-unavailable</artifactId><version>2.0.0-SNAPSHOT</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
