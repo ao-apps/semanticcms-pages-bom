@@ -54,6 +54,11 @@ along with semanticcms-pages-bom.  If not, see <http://www.gnu.org/licenses />.
 		<tag>HEAD</tag>
 	</scm>
 
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/aoindustries/semanticcms-pages-bom/issues</url>
+	</issueManagement>
+
 	<dependencyManagement>
 		<dependencies>
 			<!-- Java EE -->
