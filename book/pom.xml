@@ -39,7 +39,7 @@ along with semanticcms-pages-bom.  If not, see <http://www.gnu.org/licenses />.
 		<documented.shortTitle>BOM</documented.shortTitle>
 		<documented.description>Bill of Materials (BOM) for additional types of SemanticCMS pages.</documented.description>
 
-		<description.html><![CDATA[Documentation for <a target="_top" href="${project.url}">${documented.name}</a> in <a target="_top" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
+		<description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
 	</properties>
 
 	<name>SemanticCMS Pages BOM² Book</name>
