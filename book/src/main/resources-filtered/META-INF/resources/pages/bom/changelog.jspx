@@ -54,7 +54,7 @@ along with semanticcms-pages-bom.  If not, see <http://www.gnu.org/licenses />.
 			>
 				<ul>
 					<li>
-						New <ao:a href="http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Importing_Dependencies">Bill of Materials (BOM)</ao:a>
+						New <ao:a href="https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Importing_Dependencies">Bill of Materials (BOM)</ao:a>
 						to streamline transitive dependency management.
 					</li>
 				</ul>
