@@ -38,16 +38,10 @@ along with semanticcms-pages-bom.  If not, see <http://www.gnu.org/licenses />.
 		tocLevels="1"
 		datePublished="2019-06-11T02:15:33-0500"
 	>
-		<!-- The current snapshot, unreleased version -->
-		<c:set var="version" value="@{com.semanticcms:semanticcms-pages-bom:pom.version}" />
-		<ao:assert
-			test="${!fn:startsWith(version, '@')}"
-			message="Version not substituted: #{version}"
-		/>
-		<c:if test="${fn:endsWith(version, '-SNAPSHOT') and !fn:endsWith(version, '-POST-SNAPSHOT')}">
+		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
 				projectName="@{documented.name}"
-				version="#{version}"
+				version="@{project.version}"
 				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{project.scm.url}"
