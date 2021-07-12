@@ -34,7 +34,7 @@ along with semanticcms-pages-bom.  If not, see <http://www.gnu.org/licenses />.
 		title="@{documented.name}"
 		description="@{documented.description}"
 		datePublished="2019-06-11T02:15:33-05:00"
-		dateModified="2020-03-24T14:01:33-05:00"
+		dateModified="2021-07-12T13:25:42-05:00"
 	>
 		<core:child page="changelog" />
 		<header>
@@ -45,6 +45,8 @@ along with semanticcms-pages-bom.  If not, see <http://www.gnu.org/licenses />.
 				arg.packagingStatus="active"
 				arg.semanticVersioning="2.0.0"
 				arg.license="lgpl-3.0"
+				arg.scmUrl="@{project.scm.url}"
+				arg.githubBuildWorkflow="Build"
 			/>
 		</header>
 		<p>
