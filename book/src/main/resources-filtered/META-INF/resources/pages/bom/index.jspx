@@ -34,15 +34,15 @@ along with semanticcms-pages-bom.  If not, see <https://www.gnu.org/licenses/>.
     title="@{documented.name}"
     description="@{documented.description}"
     datePublished="2019-06-11T02:15:33-05:00"
-    dateModified="2021-07-16T03:48:08-05:00"
+    dateModified="2022-11-05T21:21:06-05:00"
   >
     <core:child page="changelog" />
     <header>
       <ao:include
         page="/ao-badges/badges.inc.jspx"
-        arg.projectStatus="current-stable"
-        arg.managementStatus="production"
-        arg.packagingStatus="active"
+        arg.projectStatus="alpha"
+        arg.managementStatus="preview"
+        arg.packagingStatus="developmental"
         arg.semanticVersioning="2.0.0"
         arg.license="lgpl-3.0"
         arg.scmUrl="@{project.scm.url}"
